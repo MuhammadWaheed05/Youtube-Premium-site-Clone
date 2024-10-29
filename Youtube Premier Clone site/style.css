@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+/* Header command line */
+
+.header{
+    width: 100%;
+    padding: 13px 15px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* leftside commandline */
+
+.header .leftSide{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.header .leftSide .logo{
+    width: 90px;
+}
+.header .leftSide .logo img{
+    width: 100%;
+}
+
+/* centerSide Command line */
+
+.center{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.center input{
+    width: 50%;
+    padding: 5px 15px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    outline: none;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid #303030;
+    color: white;
+}
+.center img:nth-child(2){
+    padding: 5px 10px;
+    background-color: #222222;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.center img:nth-child(3){
+    margin-left: 5px;
+    width: 28px;
+}
+
+/* RightSide command line */
+
+.rightSide{
+    display:flex;
+    gap: 20px;
+    padding-right: 40px;
+    /* border: 1px solid red; */
+}
+
+/* HeroSection */
+
+.heroSection{
+    width: 100%;
+    /* height: 61%; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroSection > img{
+    margin: 15px 0px;
+}
+.heroSection .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: Roboto, Arial, sans-serif;
+}
+.heroSection .offer .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heroSection .offer .title> h1{
+    width: 60%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 40px;
+    /* border: 1px solid red; */
+}  
+.heroSection .offer .title button{
+    margin-top: 60px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 30%;
+    border: none;
+    font-weight: 600;
+    background-color: #3ea6ff;
+    cursor: pointer;
+}
+.heroSection .offer .subscription{
+    width: 54%;
+    text-align: center;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+}
+.heroSection .offer .subscription p:nth-child(1){
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.heroSection .offer .subscription p:nth-child(2){
+    padding: 15px 0px;
+    font-size: 1.1rem;
+}
+.heroSection .offer .subscription p:nth-child(2) span{
+   color: #76c4ff;
+}
+.heroSection .offer .subscription p:nth-child(3){
+    padding: 15px 0px;
+    font-size: 1.1rem;
+    color: #76c4ff;
+}
+
+/* features command line */
+
+.features{
+    padding: 30px 0px;
+    height: 40%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.featureAre{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+.featureAre p{
+    font-size: 1.1rem;
+    color: gray;
+}
+
+/* banners command line */
+
+/* banner1 */
+
+.banner1{
+    width: 100%;
+    height: 50%;
+    background-image: url('assets/bg1.jpeg');
+    background-size: cover;
+    background-position-y: 10%;
+    position: relative;
+}
+.banner1 .content{
+    position: absolute;
+    width: 40%;
+    right: 2%;
+    top: 30%;
+    color: white;
+}
+.banner1 .content h2{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+.banner1 .content p{
+    font-size: 1.4rem;
+    color: gray;
+}
+
+/* banner2 */
+
+.banner2{
+    width: 100%;
+    height: 50%;
+    background-image: url('assets/bg2.jpeg');
+    background-size: cover;
+    background-position-y: 15%;
+    position: relative;
+}
+.banner2 .content{
+    position: absolute;
+    width: 40%;
+    left: 20%;
+    top: 30%;
+    color: white;
+}
+.banner2 .content h2{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+.banner2 .content p{
+    font-size: 1.4rem;
+    color: gray;
+}
+
+/* banner3 */
+
+.banner3{
+    width: 100%;
+    height: 50%;
+    background-image: url('assets/bg3.jpeg');
+    background-size: cover;
+    background-position-y: 28%;
+    position: relative;
+}
+.banner3 .content{
+    position: absolute;
+    width: 40%;
+    right: 2%;
+    top: 30%;
+    color: white;
+}
+.banner3 .content h2{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+.banner3 .content p{
+    font-size: 1.4rem;
+    color: gray;
+}
+/* banner4 */
+
+.banner4{
+    width: 100%;
+    height: 50%;
+    background-image: url('assets/bg4.jpeg');
+    background-size: cover;
+    background-position-y:10%;
+    position: relative;
+}
+.banner4 .content{
+    position: absolute;
+    width: 40%;
+    left: 15%;
+    top: 30%;
+    color: white;
+}
+.banner4 .content h2{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+.banner4 .content p{
+    font-size: 1.4rem;
+    color: gray;
+}
+
+/* FAQ  command line*/
+
+.FAQ{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height:80%;
+    width: 100%;
+    color: white;
+    padding: 80px 0px;
+}
+
+.FAQ .FAQ-Question{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.FAQ .FAQ-Question .question{
+    padding: 10px 0px;
+    border-bottom: 2px solid gray;
+}
+.que{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.answer{
+    border-top: 2px solid gray;
+    display: none;
+}
+.answer p{
+    padding: 20px 0px;
+
+}
+p{
+    margin-top: 60px;
+    margin-top: 60px;
+    text-align: center;
+}
+span{
+
+    color: aqua;
+}
+/* media Query */
+
+@media screen and (max-width:768px){
+    .heroSection .offer {
+        margin-top: 40px;
+    }
+    .heroSection .offer .title> h1 {
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .heroSection .offer .subscription p:nth-child(1) {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .featureAre {
+        width: 32%;
+    }
+    .featureAre p {
+        font-size: 1rem;
+    }
+    .banner1 {
+        height: 29%;
+    }
+    .banner1 .content {
+        top: 19%;
+    }
+    .banner1 .content h2 {
+        font-size: 3rem;
+    }
+    .banner1 .content p {
+        font-size: 1.1rem;
+    }
+    
+    .banner2 {
+        height: 29%;
+    }
+    .banner2 .content {
+        width: 53%;
+        left: 5%;
+        top: 25%;
+    }
+    .banner2 .content h2 {
+        font-size: 3rem;
+    }
+    .banner2 .content p {
+        font-size: 1.1rem;
+    }
+
+    .banner3 {
+        height: 29%;
+        background-position-y: 31%;
+    }
+    .banner3 .content {
+        width: 47%;
+        top: 22%;
+    }
+    .banner3 .content h2 {
+        font-size: 2.3rem;
+    }
+    .banner4 {
+        height: 30%;
+        background-position-y: -1%;
+    }
+    .banner4 .content {
+        left: 11%;
+        top: 17%;
+    }
+    .banner4 .content h2 {
+        font-size: 2.3rem;
+    }
+}
